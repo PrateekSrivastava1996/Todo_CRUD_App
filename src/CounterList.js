@@ -24,9 +24,6 @@ const TaskApp = () => {
   }
 
   const handleChangeTodo = nextTodo => {
-    const todo = todos.find(t => t.id === nextTodo.id)
-    todo.title = nextTodo.title
-    todo.done = nextTodo.done
     setTodos(
       todos.map(t => {
         if (t.id === nextTodo.id) {
